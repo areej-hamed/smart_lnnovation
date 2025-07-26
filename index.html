@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الابتكار الذكي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <!-- شريط التنقل العلوي -->
+    <nav class="bg-white text-black flex justify-center h-32">
+      <div class="flex items-center">
+        <img
+          class="h-10 w-10"
+          src="https://img.icons8.com/windows/32/english-to-arabic.png"
+          alt="english-to-arabic"
+        />
+      </div>
+      <div class="flex items-center">
+        <img
+          class="h-10 w-10"
+          src="https://img.icons8.com/windows/32/gender-neutral-user.png"
+          alt="gender-neutral-user"
+        />
+      </div>
+      <div class="flex items-center">
+        <img
+          class="h-10 w-10"
+          src="https://img.icons8.com/windows/32/in-inventory.png"
+          alt="in-inventory"
+        />
+      </div>
+    </nav>
+
+    <div class="flex justify-center mt-10">
+      <!-- المستطيل الأيسر -->
+      <div class="bg-white p-6 shadow-lg w-max justify-items-end">
+        <h2 class="text-xl font-bold">
+          يرجى قضاء بعض الوقت لملء النموذج أدناه تماما
+        </h2>
+        <form action="next-step.html" method="get">
+          <p class="mt-2">ما هي الأداة التي استخدمتها في اقتراحك؟</p>
+          <div class="flex space-x-2 mt-4" id="group1">
+            <label class="flex flex-col items-center">
+              <img
+                class="h-10 w-10"
+                src="https://img.icons8.com/windows/32/plus-math.png"
+                alt="plus-math"
+              />
+              <span>اخرى</span>
+              <input
+                type="radio"
+                name="group1"
+                value="6"
+                for="group1"
+                required
+              />
+            </label>
+            <label class="flex flex-col items-center">
+              <img class="h-10 w-10" src="https://img.icons8.com/windows/32/talk-male--v1.png" alt="talk-male--v1" />
+              <span class="text-center"
+                >محاكاة السيناريوهات <br />الافتراضية</span
+              >
+              <input
+                type="radio"
+                name="group1"
+                value="5"
+                for="group1"
+                required
+              />
+            </label>
+            <label class="flex flex-col items-center">
+              <img
+                class="h-10 w-10"
+                src="https://img.icons8.com/windows/32/bright-mind.png"
+                alt="bright-mind"
+              />
+              <span>العصف الذهني</span>
+              <input
+                type="radio"
+                name="group1"
+                value="4"
+                for="group1"
+                required
+              />
+            </label>
+            <label class="flex flex-col items-center">
+              <img
+                class="h-10 w-10"
+                src="https://img.icons8.com/windows/32/internet.png"
+                alt="internet"
+              />
+              <span class="text-center"
+                >التنسيق باستخدام<br />
+                التكنولوجيا</span
+              >
+              <input
+                type="radio"
+                name="group1"
+                value="3"
+                for="group1"
+                required
+              />
+            </label>
+            <label class="flex flex-col items-center">
+              <img
+                class="h-10 w-10"
+                src="https://img.icons8.com/material-rounded/24/user-group-man-woman.png"
+                alt="user-group-man-woman"
+              />
+              <span>مجموعات التركيز</span>
+              <input
+                type="radio"
+                name="group1"
+                value="2"
+                for="group1"
+                required
+              />
+            </label>
+            <label class="flex flex-col items-center">
+              <img
+                class="h-10 w-10"
+                src="https://img.icons8.com/ios-filled/50/braille.png"
+                alt="braille"
+              />
+              <span>القبعات الستة</span>
+              <input
+                type="radio"
+                name="group1"
+                value="1"
+                for="group1"
+                required
+              />
+            </label>
+          </div>
+          <div class="flex space-x-4 mt-4 justify-end">
+            <select class="border p-2 rounded bg-gray-100" required>
+              <option value="" disabled selected>اثر الابتكار</option>
+              <option>اسعاد المتعاملين</option>
+              <option>اسعاد الموظفين</option>
+              <option>ترشيد النفقات</option>
+              <option>تطوير تقنيات جديدة</option>
+              <option>تنويع مصادر الدخل</option>
+            </select>
+            <select class="border p-2 rounded bg-gray-100" required>
+              <option value="" disabled selected>نوع البتكار</option>
+              <option>الابتكار في الانظمة</option>
+              <option>الابتكار في الخدمات</option>
+              <option>الابتكار في السياسات</option>
+              <option>الابتكار في العمليات</option>
+            </select>
+          </div>
+          <div class="bg-gray-100 p-4 mt-4 rounded justify-items-end w-full">
+            <p class="text-xl font-bold">مدى الأهمية</p>
+            <p class="mt-6 font-medium">توافق الفكرة مع الاستراتيجية الوطنية للابتكار</p>
+            <div class="flex space-x-2 mt-2" id="group2">
+              <span>ابدا</span>
+              <input
+                type="radio"
+                name="group2"
+                value="5"
+                for="group2"
+                required
+              />
+              <span>نادرا</span>
+              <input
+                type="radio"
+                name="group2"
+                value="4"
+                for="group2"
+                required
+              />
+              <span>قليلا</span>
+              <input
+                type="radio"
+                name="group2"
+                value="3"
+                for="group2"
+                required
+              />
+              <span>غالبا</span>
+              <input
+                type="radio"
+                name="group2"
+                value="2"
+                for="group2"
+                required
+              />
+              <span>دائما</span>
+              <input
+                type="radio"
+                name="group2"
+                value="1"
+                for="group2"
+                required
+              />
+            </div>
+            <p class="mt-3 font-medium">
+              توافق الفكرة مع الخطة الاستراتيجية للوزارة وتحقيق المستهدفات
+            </p>
+            <div class="flex space-x-2 mt-2" id="group3">
+              <span>ابدا</span>
+              <input
+                type="radio"
+                name="group3"
+                value="5"
+                for="group3"
+                required
+              />
+              <span>نادرا</span>
+              <input
+                type="radio"
+                name="group3"
+                value="4"
+                for="group3"
+                required
+              />
+              <span>قليلا</span>
+              <input
+                type="radio"
+                name="group3"
+                value="3"
+                for="group3"
+                required
+              />
+              <span>غالبا</span>
+              <input
+                type="radio"
+                name="group3"
+                value="2"
+                for="group3"
+                required
+              />
+              <span>دائما</span>
+              <input
+                type="radio"
+                name="group3"
+                value="1"
+                for="group3"
+                required
+              />
+            </div>
+          </div>
+          <div class="bg-gray-100 p-4 mt-4 rounded justify-items-end w-full">
+            <p class="text-xl font-bold">الحداثة</p>
+            <p class="mt-6 font-medium">
+              تعتبر الفكرة خارجة عن المألوف أو مطورة عن مقترح سابق
+            </p>
+            <div class="flex space-x-2 mt-2" id="group4">
+              <span>ابدا</span>
+              <input
+                type="radio"
+                name="group4"
+                value="5"
+                for="group4"
+                required
+              />
+              <span>نادرا</span>
+              <input
+                type="radio"
+                name="group4"
+                value="4"
+                for="group4"
+                required
+              />
+              <span>قليلا</span>
+              <input
+                type="radio"
+                name="group4"
+                value="3"
+                for="group4"
+                required
+              />
+              <span>غالبا</span>
+              <input
+                type="radio"
+                name="group4"
+                value="2"
+                for="group4"
+                required
+              />
+              <span>دائما</span>
+              <input
+                type="radio"
+                name="group4"
+                value="1"
+                for="group4"
+                required
+              />
+            </div>
+            <p class="mt-3 font-medium">تفرد الفكرة وامتيازها بالريادة وذات سمة ابتكارية</p>
+            <div class="flex space-x-2 mt-2" id="group5">
+              <span>ابدا</span>
+              <input
+                type="radio"
+                name="group5"
+                value="5"
+                for="group5"
+                required
+              />
+              <span>نادرا</span>
+              <input
+                type="radio"
+                name="group5"
+                value="4"
+                for="group5"
+                required
+              />
+              <span>قليلا</span>
+              <input
+                type="radio"
+                name="group5"
+                value="3"
+                for="group5"
+                required
+              />
+              <span>غالبا</span>
+              <input
+                type="radio"
+                name="group5"
+                value="2"
+                for="group5"
+                required
+              />
+              <span>دائما</span>
+              <input
+                type="radio"
+                name="group5"
+                value="1"
+                for="group5"
+                required
+              />
+            </div>
+          </div>
+          <div class="bg-gray-100 p-4 mt-4 rounded justify-items-end w-full">
+            <p class="text-xl font-bold">القيمة المضافة</p>
+            <p class="mt-6 font-medium">مساهمة الفكرة في حل المشاكل والتحديات القائمة</p>
+            <div class="flex space-x-2 mt-2" id="group6">
+              <span>ابدا</span>
+              <input
+                type="radio"
+                name="group6"
+                value="5"
+                for="group6"
+                required
+              />
+              <span>نادرا</span>
+              <input
+                type="radio"
+                name="group6"
+                value="4"
+                for="group6"
+                required
+              />
+              <span>قليلا</span>
+              <input
+                type="radio"
+                name="group6"
+                value="3"
+                for="group6"
+                required
+              />
+              <span>غالبا</span>
+              <input
+                type="radio"
+                name="group6"
+                value="2"
+                for="group6"
+                required
+              />
+              <span>دائما</span>
+              <input
+                type="radio"
+                name="group6"
+                value="1"
+                for="group6"
+                required
+              />
+            </div>
+            <p class="mt-3 font-medium">مساهمة الفكرة في تطوير مجالات عمل جديدة</p>
+            <div class="flex space-x-2 mt-2" id="group7">
+              <span>ابدا</span>
+              <input
+                type="radio"
+                name="group7"
+                value="5"
+                for="group7"
+                required
+              />
+              <span>نادرا</span>
+              <input
+                type="radio"
+                name="group7"
+                value="4"
+                for="group7"
+                required
+              />
+              <span>قليلا</span>
+              <input
+                type="radio"
+                name="group7"
+                value="3"
+                for="group7"
+                required
+              />
+              <span>غالبا</span>
+              <input
+                type="radio"
+                name="group7"
+                value="2"
+                for="group7"
+                required
+              />
+              <span>دائما</span>
+              <input
+                type="radio"
+                name="group7"
+                value="1"
+                for="group7"
+                required
+              />
+            </div>
+            <p class="mt-3 font-medium">
+              قدرة الفكرة في تلبية احتياجات المتعاملين والموظفين والمعنيين بشكل
+              عام
+            </p>
+            <div class="flex space-x-2 mt-2" id="group8">
+              <span>ابدا</span>
+              <input
+                type="radio"
+                name="group8"
+                value="5"
+                for="group8"
+                required
+              />
+              <span>نادرا</span>
+              <input
+                type="radio"
+                name="group8"
+                value="4"
+                for="group8"
+                required
+              />
+              <span>قليلا</span>
+              <input
+                type="radio"
+                name="group8"
+                value="3"
+                for="group8"
+                required
+              />
+              <span>غالبا</span>
+              <input
+                type="radio"
+                name="group8"
+                value="2"
+                for="group8"
+                required
+              />
+              <span>دائما</span>
+              <input
+                type="radio"
+                name="group8"
+                value="1"
+                for="group8"
+                required
+              />
+            </div>
+          </div>
+          <div class="bg-gray-100 p-4 mt-4 rounded justify-items-end w-full">
+            <p class="text-xl font-bold">امكانية توسيع النطاق</p>
+            <p class="mt-6 font-medium">
+              قابلية تكرار تنفيذ الفكرة على خدمات وأنظمة أخرى في الوزارة
+            </p>
+            <div class="flex space-x-2 mt-2" id="group9">
+              <span>ابدا</span>
+              <input
+                type="radio"
+                name="group9"
+                value="5"
+                for="group9"
+                required
+              />
+              <span>نادرا</span>
+              <input
+                type="radio"
+                name="group9"
+                value="4"
+                for="group9"
+                required
+              />
+              <span>قليلا</span>
+              <input
+                type="radio"
+                name="group9"
+                value="3"
+                for="group9"
+                required
+              />
+              <span>غالبا</span>
+              <input
+                type="radio"
+                name="group9"
+                value="2"
+                for="group9"
+                required
+              />
+              <span>دائما</span>
+              <input
+                type="radio"
+                name="group9"
+                value="1"
+                for="group9"
+                required
+              />
+            </div>
+            <p class="mt-3 font-medium">
+              امكانية توسعة نطاق تنفيذ الفكرة لتشمل كافة المعنيين
+            </p>
+            <div class="flex space-x-2 mt-2" id="group10">
+              <span>ابدا</span>
+              <input
+                type="radio"
+                name="group10"
+                value="5"
+                for="group10"
+                required
+              />
+              <span>نادرا</span>
+              <input
+                type="radio"
+                name="group10"
+                value="4"
+                for="group10"
+                required
+              />
+              <span>قليلا</span>
+              <input
+                type="radio"
+                name="group10"
+                value="3"
+                for="group10"
+                required
+              />
+              <span>غالبا</span>
+              <input
+                type="radio"
+                name="group10"
+                value="2"
+                for="group10"
+                required
+              />
+              <span>دائما</span>
+              <input
+                type="radio"
+                name="group10"
+                value="1"
+                for="group10"
+                required
+              />
+            </div>
+          </div>
+          <div class="flex gap-4 mt-6">
+            <button
+              type="submit"
+              class="bg-green-500 text-white px-4 py-2 rounded inline-block"
+            >
+              التالي
+            </button>
+            <button class="bg-gray-300 text-black px-4 py-2 rounded">
+              الغاء
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- المستطيل الأيمن -->
+      <div class="bg-teal-700 text-white w-52 shadow-lg">
+        <div class="flex flex-col items-center justify-center h-40 w-full">
+          <h2 class="text-xl font-bold text-right w-full h-10 pr-4">
+            تقديم فكرة
+          </h2>
+          <p class="bg-gray-800 text-white w-full text-right h-10 pr-4">
+            الخطوة الأولى
+          </p>
+          <p class="w-full text-right h-10 pr-4">الخطوة الثانية</p>
+        </div>
+        <div class="mt-10 flex flex-col space-y-2 place-items-center">
+          <button class="bg-white text-teal-700 h-10 w-28 rounded">
+            أدوات الابتكار
+          </button>
+          <button class="bg-white text-teal-700 h-10 w-28 rounded">
+            الإرشادات
+          </button>
+          <button class="bg-white text-teal-700 h-14 w-28 rounded">
+            معايير تقييم الفكرة
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

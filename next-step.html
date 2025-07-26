@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الخطوة التالية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- شريط التنقل العلوي -->
+    <nav class="bg-white text-black flex justify-center h-32">
+      <div class="flex items-center">
+        <img
+          class="h-10 w-10"
+          src="https://img.icons8.com/windows/32/english-to-arabic.png"
+          alt="english-to-arabic"
+        />
+      </div>
+      <div class="flex items-center">
+        <img
+          class="h-10 w-10"
+          src="https://img.icons8.com/windows/32/gender-neutral-user.png"
+          alt="gender-neutral-user"
+        />
+      </div>
+      <div class="flex items-center">
+        <img
+          class="h-10 w-10"
+          src="https://img.icons8.com/windows/32/in-inventory.png"
+          alt="in-inventory"
+        />
+      </div>
+    </nav>
+    <div class="flex justify-center mt-10">
+      <!-- المستطيل الأيسر -->
+      <div class="bg-white p-6 shadow-lg w-max justify-items-end">
+        <h2 class="text-xl font-bold">
+          يرجى قضاء بعض الوقت لملء النموذج أدناه تماما
+        </h2>
+        <form class="flex gap-20 mt-4">
+          <div class="flex flex-col">
+            <label class="block">
+              <span class="block text-sm font-medium text-slate-700 text-right"
+                >البريد الالكتروني</span
+              >
+              <input type="email" class="peer bg-gray-100 h-11 w-60" required />
+              <p
+                class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"
+              >
+                Please provide a valid email address.
+              </p>
+            </label>
+            <label class="block mt-3">
+              <span class="block text-sm font-medium text-slate-700 text-right"
+                >الهاتف</span
+              >
+              <input
+                type="number"
+                class="peer bg-gray-100 h-11 w-60"
+                required
+              />
+              <p
+                class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"
+              >
+                Please provide a valid number address.
+              </p>
+            </label>
+            <label class="block mt-3">
+              <span class="block text-sm font-medium text-slate-700 text-right"
+                >الاسم المقترح للفكره</span
+              >
+              <input type="text" class="peer bg-gray-100 h-11 w-60" required />
+            </label>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="flex flex-col space-x-2 items-end" id="g1">
+              <p class="mt-2">تقديم الفكرة بصفة</p>
+              <div>
+                <span>فردية</span>
+                <input type="radio" name="group2" value="5" for="g1" required />
+                <span>فريق</span>
+                <input type="radio" name="group2" value="4" for="g1" required />
+              </div>
+              <div>
+                <span>وحدة تنظيمية</span>
+                <input type="radio" name="group2" value="3" for="g1" required />
+              </div>
+            </div>
+            <div>
+              <select class="border p-2 rounded bg-gray-100 mt-4 w-60" required>
+                <option>الفكرة موجة الى</option>
+                <option>مكتب الوزير</option>
+                <option>مكتب الامن السبراني</option>
+                <option>المكتب الفني</option>
+                <option>ادارة الانظمة الرقمية للاعمال</option>
+                <option>ادارة البيانات</option>
+                <option>ادارة التحقق والمتابعة</option>
+              </select>
+            </div>
+            <label class="block mt-3">
+              <span class="block text-sm font-medium text-slate-700 text-right"
+                >الموارد اللازمة لتنفيذ الفكرة</span
+              >
+              <input type="text" class="peer bg-gray-100 h-11 w-60" required />
+            </label>
+          </div>
+        </form>
+        <label class="block mt-3 w-full">
+          <span class="block text-sm font-medium text-slate-700 text-right"
+            >تفاصيل الفكره</span
+          >
+          <input type="text" class="peer bg-gray-100 h-36 w-full" required />
+        </label>
+        <div class="flex gap-4 mt-6">
+          <a
+            href="#"
+            class="bg-green-500 text-white px-4 py-2 rounded inline-block"
+            >تسجيل</a
+          >
+          <button class="bg-gray-300 text-black px-4 py-2 rounded">
+            الغاء
+          </button>
+        </div>
+      </div>
+      <!-- المستطيل الأيمن -->
+      <div class="bg-teal-700 text-white w-52 shadow-lg">
+        <div class="flex flex-col items-center justify-center h-40 w-full">
+          <h2 class="text-xl font-bold text-right w-full h-10 pr-4">
+            تقديم فكرة
+          </h2>
+          <p class="w-full text-right h-10 pr-4">الخطوة الأولى</p>
+          <p class="bg-gray-800 text-white w-full text-right h-10 pr-4">
+            الخطوة الثانية
+          </p>
+        </div>
+        <div class="mt-10 flex flex-col space-y-2 place-items-center">
+          <button class="bg-white text-teal-700 h-10 w-28 rounded">
+            أدوات الابتكار
+          </button>
+          <button class="bg-white text-teal-700 h-10 w-28 rounded">
+            الإرشادات
+          </button>
+          <button class="bg-white text-teal-700 h-14 w-28 rounded">
+            معايير تقييم الفكرة
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
